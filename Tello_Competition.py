@@ -59,6 +59,15 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
+        # Commit Message First Hoop - Stable
+
+        # Commit Message Second hoop - Stable
+
+        # Commit Message: Third Hoop - Stable
+
+        # Commit Message: Final Hoop - Stable
+
+
         # Review the (SDK) Software Development Kit resource for Drone Commands
         # Delete these comments before writing your program
 
