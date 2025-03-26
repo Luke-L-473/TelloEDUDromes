@@ -60,9 +60,9 @@ try:
         sendmsg('takeoff')
 
         # Commit Message First Hoop - Stable
-        sendmsg('forward 175')
+        sendmsg('go 180 0 30 100')
         # Commit Message Second hoop - Stable
-
+        sendmsg('go 275 0 32 100')
         # Commit Message: Third Hoop - Stable
 
         # Commit Message: Final Hoop - Stable
