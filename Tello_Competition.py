@@ -56,13 +56,16 @@ try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
 
-        sendmsg('command', 0)
+        sendmsg('command', 4)
         sendmsg('takeoff')
 
         # Commit Message First Hoop - Stable
-        sendmsg('go 180 0 30 100')
+        sendmsg('go 200 30 30 100')
         # Commit Message Second hoop - Stable
-        sendmsg('go 275 0 32 100')
+        sendmsg('go 210 0 45 100')
+        sendmsg('ccw 90')
+        sendmsg('forward 125')
+        sendmsg('ccw 90')
         # Commit Message: Third Hoop - Stable
 
         # Commit Message: Final Hoop - Stable
