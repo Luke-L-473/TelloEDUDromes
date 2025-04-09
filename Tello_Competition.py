@@ -56,25 +56,24 @@ try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
 
-        sendmsg('command', 4)
+        sendmsg('command', 8)
         sendmsg('takeoff')
 
         # Commit Message First Hoop - Stable
-        sendmsg('go 200 30 30 100')
+        sendmsg('forward 215', 4)
         # Commit Message Second hoop - Stable
-        sendmsg('go 210 0 45 100')
-        sendmsg('ccw 90')
-        sendmsg('forward 125')
-        sendmsg('ccw 90')
+        sendmsg('go 235 0 70 100', 4)
+
         # Commit Message: Third Hoop - Stable
-
+        sendmsg('curve 155 155 0 0 290 0 60', 4)
+        sendmsg('curve -155 -155 0 0 -290 0 60', 4)
         # Commit Message: Final Hoop - Stable
-
+        sendmsg('go -230xx 0 -70 100', 4)
 
         # Review the (SDK) Software Development Kit resource for Drone Commands
         # Delete these comments before writing your program
 
-        sendmsg('land')
+        sendmsg('land', 4)
 
         print('\nGreat Flight!!!')
 
